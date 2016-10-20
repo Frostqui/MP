@@ -15,16 +15,18 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class GameActivity extends AppCompatActivity {
-
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        mp = MediaPlayer.create(this, R.raw.sound);
         setContentView(R.layout.activity_game); // Establece el xml con la vista
         h3.postDelayed(run2, 0);
 
         }
-   // final MediaPlayer mp = MediaPlayer.create(this, R.raw.sound);
+    public void reproducirSonido(){
+        mp.start();
+    }
     Handler h2 = new Handler();
     Handler h3 = new Handler();
 
@@ -39,8 +41,6 @@ public class GameActivity extends AppCompatActivity {
 
             bullet.setVisibility(View.VISIBLE);
             ship.setEnabled(false);
-
-
             DisplayMetrics metrics = new DisplayMetrics();
             getWindowManager().getDefaultDisplay().getMetrics(metrics);
             int width = metrics.widthPixels;
@@ -51,6 +51,7 @@ public class GameActivity extends AppCompatActivity {
 
             if((bullet.getY()+bullet.getHeight() <10 )) //Si el disparo sale de la pantalla desaparece
             {
+                reproducirSonido(); //El sonido se reproduce cuando el disparo desaparece.
                 bullet.setVisibility(View.INVISIBLE);
                 h3.removeCallbacks(run2);
                 bullet.setX(ship.getX() + ship.getWidth() / 2 - bullet.getWidth() / 2); //Ajustar centro de bala a centro de nave
@@ -71,7 +72,6 @@ public class GameActivity extends AppCompatActivity {
         bullet.setVisibility(View.VISIBLE);
         ship.setEnabled(false);
         h3.postDelayed(run2, 0);
-      // mp.start();
     }
 
 
