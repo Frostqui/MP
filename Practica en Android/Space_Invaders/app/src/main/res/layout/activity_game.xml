@@ -20,7 +20,7 @@
         android:id="@+id/bullet"
         android:layout_above="@+id/ship"
         android:layout_centerHorizontal="true"
-        android:visibility="invisible" />
+        />
 
 
     <ImageButton
@@ -29,8 +29,9 @@
         android:layout_gravity="center_horizontal|bottom"
         android:background="@drawable/playership"
         android:id="@+id/ship"
-        android:onClick="shot"
+       android:onClick="shot"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
