@@ -12,16 +12,6 @@
     android:background="@drawable/bg"
     >
 
-    <ImageView
-        android:layout_width="10dp"
-        android:layout_height="60dp"
-        android:background="@drawable/bullet"
-        android:layout_marginBottom="26dp"
-        android:id="@+id/bullet"
-        android:layout_above="@+id/ship"
-        android:layout_centerHorizontal="true"
-        />
-
 
     <ImageButton
         android:layout_width="35dp"
@@ -32,6 +22,28 @@
        android:onClick="shot"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bullet"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/bullet"
+        android:layout_above="@+id/ship"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="75dp"
+        android:id="@+id/invader1"
+        android:background="@drawable/invader1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ship"
+        android:layout_toStartOf="@+id/ship"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp" />
 
 
 </RelativeLayout>
