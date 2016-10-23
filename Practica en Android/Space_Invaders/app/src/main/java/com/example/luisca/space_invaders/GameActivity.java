@@ -37,18 +37,16 @@ public class GameActivity extends AppCompatActivity {
         public void run() {
             ImageView bullet = (ImageView) findViewById(R.id.bullet);
             ImageButton ship = (ImageButton) findViewById(R.id.ship);
-
+            ImageView invader1 = (ImageView) findViewById(R.id.invader1);
 
             bullet.setVisibility(View.VISIBLE);
+            invader1.setVisibility(View.VISIBLE);
             ship.setEnabled(false);
             DisplayMetrics metrics = new DisplayMetrics();
             getWindowManager().getDefaultDisplay().getMetrics(metrics);
             int width = metrics.widthPixels;
             int height = metrics.heightPixels;
-
-
             bullet.setY(bullet.getY()-60); //Mueve el disparo hacia arriba
-
             if((bullet.getY()+bullet.getHeight() <10 )) //Si el disparo sale de la pantalla desaparece
             {
                 reproducirSonido(); //El sonido se reproduce cuando el disparo desaparece.
@@ -56,7 +54,6 @@ public class GameActivity extends AppCompatActivity {
                 h3.removeCallbacks(run2);
                 bullet.setX(ship.getX() + ship.getWidth() / 2 - bullet.getWidth() / 2); //Ajustar centro de bala a centro de nave
                 bullet.setY(ship.getY() - ship.getHeight()); //Ajustar alto de la bala a final de la nave
-                //ship.setEnabled(true);
             }
 
             h3.postDelayed(this, 50);
@@ -98,7 +95,7 @@ public class GameActivity extends AppCompatActivity {
             case MotionEvent.ACTION_MOVE:
                 currX = event.getRawX();
 
-                ship.setX(currX);
+                ship.setX(currX-ship.getWidth()/2);
 
 
             default:
