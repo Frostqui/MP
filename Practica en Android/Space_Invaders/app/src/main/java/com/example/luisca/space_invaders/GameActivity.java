@@ -15,14 +15,18 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class GameActivity extends AppCompatActivity {
-
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mp = MediaPlayer.create(this, R.raw.sound);
         setContentView(R.layout.activity_game); // Establece el xml con la vista
+        h3.postDelayed(run2, 0);
 
         }
-    final MediaPlayer mp = MediaPlayer.create(this, R.raw.sound);
+    public void reproducirSonido(){
+        mp.start();
+    }
     Handler h2 = new Handler();
     Handler h3 = new Handler();
 
@@ -33,34 +37,41 @@ public class GameActivity extends AppCompatActivity {
         public void run() {
             ImageView bullet = (ImageView) findViewById(R.id.bullet);
             ImageButton ship = (ImageButton) findViewById(R.id.ship);
+            ImageView invader1 = (ImageView) findViewById(R.id.invader1);
+
+            bullet.setVisibility(View.VISIBLE);
+            invader1.setVisibility(View.VISIBLE);
+            ship.setEnabled(false);
             DisplayMetrics metrics = new DisplayMetrics();
             getWindowManager().getDefaultDisplay().getMetrics(metrics);
             int width = metrics.widthPixels;
             int height = metrics.heightPixels;
-
-
-            bullet.setY(bullet.getY()-30); //Mueve el disparo hacia arriba
-
+            bullet.setY(bullet.getY()-60); //Mueve el disparo hacia arriba
             if((bullet.getY()+bullet.getHeight() <10 )) //Si el disparo sale de la pantalla desaparece
             {
+                reproducirSonido(); //El sonido se reproduce cuando el disparo desaparece.
                 bullet.setVisibility(View.INVISIBLE);
                 h3.removeCallbacks(run2);
-                ship.setEnabled(true);
+                bullet.setX(ship.getX() + ship.getWidth() / 2 - bullet.getWidth() / 2); //Ajustar centro de bala a centro de nave
+                bullet.setY(ship.getY() - ship.getHeight()); //Ajustar alto de la bala a final de la nave
             }
 
             h3.postDelayed(this, 50);
         }
     };
+
+
     public void shot(View v){ // Este metodo se ejecuta al pulsar sobre la nave
         ImageView bullet = (ImageView) findViewById(R.id.bullet);
         ImageButton ship = (ImageButton) findViewById(R.id.ship);
-        bullet.setX(ship.getX()+ ship.getWidth()/2);
-        bullet.setY(ship.getY());
+        bullet.setX(ship.getX() + ship.getWidth() / 2 - bullet.getWidth() / 2); //Ajustar centro de bala a centro de nave
+        bullet.setY(ship.getY() - ship.getHeight()); //Ajustar alto de la bala a final de la nave
         bullet.setVisibility(View.VISIBLE);
         ship.setEnabled(false);
         h3.postDelayed(run2, 0);
-        mp.start();
     }
+
+
 
 
 
@@ -84,7 +95,7 @@ public class GameActivity extends AppCompatActivity {
             case MotionEvent.ACTION_MOVE:
                 currX = event.getRawX();
 
-                ship.setX(currX);
+                ship.setX(currX-ship.getWidth()/2);
 
 
             default:
