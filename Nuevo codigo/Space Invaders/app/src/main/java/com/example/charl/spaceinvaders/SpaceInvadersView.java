@@ -3,10 +3,13 @@ package com.example.charl.spaceinvaders;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.Log;
@@ -15,6 +18,8 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 import java.io.IOException;
+
+import static com.example.charl.spaceinvaders.R.attr.height;
 
 /**
  * Created by charl on 06/11/2016.
@@ -39,6 +44,7 @@ import java.io.IOException;
 
     // objetos canvas y paint, para el fondo y demas
     private Canvas canvas;
+    private Drawable fondo;
     private Paint paint;
 
     // monitoriza el frame rate
@@ -368,9 +374,12 @@ import java.io.IOException;
         if (ourHolder.getSurface().isValid()) {
 
             canvas = ourHolder.lockCanvas();
-
+            //Imagen como fondo
+            fondo= context.getResources().getDrawable(R.drawable.espacio);
+            fondo.setBounds(0,0,fondo.getIntrinsicWidth(),fondo.getIntrinsicHeight());
             // color del fondo
             canvas.drawColor(Color.argb(255, 25, 25, 112));
+            fondo.draw(canvas);
 
             // paleta de color para pintar
             paint.setColor(Color.argb(255,  255, 255, 255));

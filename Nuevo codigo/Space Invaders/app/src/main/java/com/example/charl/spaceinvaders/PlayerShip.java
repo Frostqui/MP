@@ -22,6 +22,8 @@ public class PlayerShip {
 
     // X coordenada (igual que marcianos)
     private float x;
+    private float sX;
+    private float sY;
 
     // Y coordenada (igual que marcianos)
     private float y;
@@ -42,7 +44,8 @@ public class PlayerShip {
 
         // Inicializa vacio
         rect = new RectF();
-
+        sX=screenX;
+        sY=screenY;
         length = screenX/10;
         height = screenY/10;
 
@@ -93,10 +96,12 @@ public class PlayerShip {
     // actualiza viendo si l anave s emueve y las coordenadas
     public void update(long fps){
         if(shipMoving == LEFT){
+            if(x-shipSpeed>=-330) //No se salga de pantalla
             x = x - shipSpeed / fps;
         }
 
         if(shipMoving == RIGHT){
+            if((x+shipSpeed)<=(sX+230)) //No se salga de pantalla
             x = x + shipSpeed / fps;
         }
 
