@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_a64589dc108d028f23f1ca7bb76ad07a686a0363\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_fcde6917fbf66f1758882ec7e4ad9fb8b29ac288\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_e64f5813998756ae38707b6e3979b6ba0f373a17\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_9ab77577f0812a4a53aeee10c5aa1a0414108680\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_7474e09d0c50c33d34d129cd845030cc89c41eec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_a70458c92dac2488082c28da13ca24e0f2a4c832\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_8b1bc9f1076a0be6b4be79900afde9e27e2d7576\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_c3e4142652b0f1c463a2258f94de1eb6d8ab7460\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="894789876febf1f8d9dedd3a5f855c22a47940ab">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_bcdc26bfdae0a9fc244204253a4f4d114b891b06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_1f74e842358a1909563fbd58d985cb5ca907966b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_2d268445a5cc3d0de0a0bd88c913d6a47aab5e72\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_3d6c5fbeabab276ff253384f0e168050c2a3a143\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_05e6ff493fc020586aaeb7bc61a07c3ee27a7f13\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d2ad42a5589eeffaea74c08c2860f64751c1c340\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b322c72866f6730c3c20356852a346b808f5cbf6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="468576b642baa5139450e074526af93bfb0bdf04">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d43823848816819994a10bb29e829a2029710812\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Alex\Desktop\Space_Invaders\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_592bd35afb0a4d7bd24ec6b50cf5e9d30399bda5\classes.dex" />
+    </item>
+
+</items>
