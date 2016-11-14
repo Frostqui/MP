@@ -1,0 +1,7 @@
+#Sat Oct 22 22:11:17 CEST 2016
+base.0=C\:\\Users\\Alex\\Desktop\\Space_Invaders\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_bcdc26bfdae0a9fc244204253a4f4d114b891b06
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Alex\\Desktop\\Space_Invaders\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d43823848816819994a10bb29e829a2029710812\\classes.dex
+base.1=C\:\\Users\\Alex\\Desktop\\Space_Invaders\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d43823848816819994a10bb29e829a2029710812
+file.0=C\:\\Users\\Alex\\Desktop\\Space_Invaders\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_bcdc26bfdae0a9fc244204253a4f4d114b891b06\\classes.dex
