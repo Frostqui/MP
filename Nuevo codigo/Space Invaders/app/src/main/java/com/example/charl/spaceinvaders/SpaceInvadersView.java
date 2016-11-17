@@ -178,7 +178,17 @@ import static com.example.charl.spaceinvaders.R.attr.height;
         // reseteamos el nivel de amenaza
         menaceInterval = 1000;
 
-        // construimos los refugios(no implementado pero codigo hecho)
+        // construimos los refugios
+
+        numBricks = 0;
+        for(int shelterNumber = 0; shelterNumber < 4; shelterNumber++){
+            for(int column = 0; column < 10; column ++ ) {
+                for (int row = 0; row < 5; row++) {
+                    bricks[numBricks] = new DefenceBrick(row, column, shelterNumber, screenX, screenY);
+                    numBricks++;
+                }
+            }
+        }
 
     }
 
@@ -343,9 +353,38 @@ import static com.example.charl.spaceinvaders.R.attr.height;
             }
         }
 
-        // ha roto una bala enemiga el refugio (no implementado pero codigo hecho)
+        // ha roto una bala enemiga el refugio
 
-        // ha roto una bala del jugador el refugio (no implementado pero codigo hecho)
+        for(int i = 0; i < invadersBullets.length; i++){
+            if(invadersBullets[i].getStatus()){
+                for(int j = 0; j < numBricks; j++){
+                    if(bricks[j].getVisibility()){
+                        if(RectF.intersects(invadersBullets[i].getRect(), bricks[j].getRect())){
+                            // A collision has occurred
+                            invadersBullets[i].setInactive();
+                            bricks[j].setInvisible();
+                            soundPool.play(damageShelterID, 1, 1, 0, 0, 1);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        // ha roto una bala del jugador el refugio
+
+        if(bullet.getStatus()){
+            for(int i = 0; i < numBricks; i++){
+                if(bricks[i].getVisibility()){
+                    if(RectF.intersects(bullet.getRect(), bricks[i].getRect())){
+                        // A collision has occurred
+                        bullet.setInactive();
+                        bricks[i].setInvisible();
+                        soundPool.play(damageShelterID, 1, 1, 0, 0, 1);
+                    }
+                }
+            }
+        }
 
         // ha dado una bala enemiga a la nave del jugador?
         for(int i = 0; i < invadersBullets.length; i++){
@@ -385,7 +424,7 @@ import static com.example.charl.spaceinvaders.R.attr.height;
             paint.setColor(Color.argb(255,  255, 255, 255));
 
             // dibuja la nave
-            canvas.drawBitmap(playerShip.getBitmap(), playerShip.getX(), screenY - 100, paint);
+            canvas.drawBitmap(playerShip.getBitmap(), playerShip.getX(), screenY - 50, paint);
 
             // dibuja los marcianos
             for(int i = 0; i < numInvaders; i++){
@@ -398,7 +437,13 @@ import static com.example.charl.spaceinvaders.R.attr.height;
                 }
             }
 
-            // dibuja los bloques del refugio que se ven (no implementado pero codigo hecho)
+            // dibuja los bloques del refugio que se ven
+
+            for(int i = 0; i < numBricks; i++){
+                if(bricks[i].getVisibility()) {
+                    canvas.drawRect(bricks[i].getRect(), paint);
+                }
+            }
 
             // dibuja las balas del jugador si se activan
             if(bullet.getStatus()){
