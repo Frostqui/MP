@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/background_dark">
+
+    <Button
+        android:layout_height="match_parent"
+        android:id="@+id/btnCambio"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="wrap_content"
+        android:onClick="cambiarpantalla (SplashScreen)"
+        android:backgroundTint="@android:color/background_dark"
+        android:background="@drawable/start"
+        android:layout_marginLeft="0dp"
+        android:drawableLeft="@drawable/start" />
+</LinearLayout>
