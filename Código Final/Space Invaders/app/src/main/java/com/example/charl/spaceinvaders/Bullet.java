@@ -19,7 +19,7 @@ public class Bullet {
 
     // no va a ningun lado
     int heading = -1;
-    float speed =  350;
+    float speed =  350000;
 
     private int width = 5;
     private int height;
